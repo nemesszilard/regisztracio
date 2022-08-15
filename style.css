@@ -15,3 +15,6 @@ h1 {
   form {
     width: 500px;
   }
+  #myinput {
+    width: 100%;
+  }
