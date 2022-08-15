@@ -18,3 +18,9 @@ h1 {
   #myinput {
     width: 100%;
   }
+  #emailid{
+    color: red;
+  }
+  #jelszoid{
+    color: red;
+  }
