@@ -10,7 +10,7 @@ if (email1.value === email2.value && jelszo1.value === jelszo2.value && email1.v
     }
   }
 function email(){
-  if (email1.value != email2.value) {
+  if (email1.value != email2.value && email1.value != "" && email2.value != "") {
     document.getElementById("emailid").innerHTML = "Email nem egyezik.";
     }else{
       emailid?.remove();
@@ -18,7 +18,9 @@ function email(){
 }
 
 function megjel(){
-  if (jelszo1.value != jelszo2.value) {
+  if (jelszo1.value != jelszo2.value && jelszo1.value != "" && jelszo2.value != "") {
     document.getElementById("jelszoid").innerHTML = "A két jelszó nem egyezik.";
+    }else{
+      jelszoid?.remove();
     }
 }
