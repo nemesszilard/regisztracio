@@ -7,10 +7,10 @@ button.disabled = true;
 function katt(){
 if (email1.value === email2.value && jelszo1.value === jelszo2.value && email1.value != "" && email2.value != "" && jelszo1.value != "" && jelszo2.value != ""){
     button.disabled = false;
-
     }
-    
-    if (email1.value != email2.value) {
-      document.getElementById("emailid").innerHTML = "Email nem egyezik.";
-      }
   }
+function email(){
+  if (email1.value != email2.value) {
+    document.getElementById("emailid").innerHTML = "Email nem egyezik.";
+    }
+}

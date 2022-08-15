@@ -14,37 +14,37 @@
         <form class="row g-3">
           <div class="col-12">
             <label for="Name" class="form-label">Full name</label>
-            <input type="text" class="form-control" id="Name" placeholder="">
+            <input type="text" class="form-control" id="Name" placeholder="" onblur="katt(this)">
           </div>
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail1">
+              <input type="email" class="form-control" id="inputEmail1" onblur="katt(this)">
               <div id="emailid"></div>
             </div>
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email ell.</label>
-              <input type="email" class="form-control" id="inputEmail2" onblur="katt()">
+              <input type="email" class="form-control" id="inputEmail2" onblur="email()"; onblur="katt(this)">
               
             </div>
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword1">
+              <input type="password" class="form-control" id="inputPassword1" onblur="katt(this)">
             </div>
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label">Megrerősítő jelszó</label>
-              <input type="password" class="form-control" id="inputPassword2">
+              <input type="password" class="form-control" id="inputPassword2" onblur="katt(this)">
             </div>
             <div class="col-12">
               <label for="inputAddress2" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" onblur="katt(this)">
             </div>
             <div class="col-md-6">
               <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
+              <input type="text" class="form-control" id="inputCity" onblur="katt(this)">
             </div>
             <div class="col-md-2">
               <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
+              <input type="text" class="form-control" id="inputZip" onblur="katt(this)">
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-primary" id="gomb" >Sign in</button>
