@@ -11,9 +11,6 @@ if (email1.value === email2.value && jelszo1.value === jelszo2.value && email1.v
     }
     
     if (email1.value != email2.value) {
-      const p = document.createElement("p");
-      const textNode = document.createTextNode("Email nem egyezik.");
-      p.appendChild(textNode);
-      document.body.appendChild(p);
+      document.getElementById("emailid").innerHTML = "Email nem egyezik.";
       }
   }
