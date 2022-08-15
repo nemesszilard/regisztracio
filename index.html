@@ -7,6 +7,8 @@
 
     </head>
     <body>
+      <input type="text" id="myInput" onblur="katt()">
+      <div>
       <h1>Regisztráció</h1>
         <form class="row g-3">
           <div class="col-12">
@@ -29,7 +31,7 @@
               <label for="inputPassword4" class="form-label">Megrerősítő jelszó</label>
               <input type="password" class="form-control" id="inputPassword2">
             </div>
-            <div class="col-12" onclick="ell()">
+            <div class="col-12">
               <label for="inputAddress2" class="form-label">Address</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>
@@ -42,10 +44,10 @@
               <input type="text" class="form-control" id="inputZip">
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary" id="gomb">Sign in</button>
+              <button type="submit" class="btn btn-primary" id="gomb" >Sign in</button>
             </div>
           </form>
-          
+        </div>   
 <script src="app.js"></script>
     </body>
 </html>
