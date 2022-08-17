@@ -1,8 +1,8 @@
 const button = document.getElementById("gomb");
-var email1 = document.getElementById("inputEmail1");
-var email2 = document.getElementById("inputEmail2");
-var jelszo1 = document.getElementById("inputPassword1");
-var jelszo2 = document.getElementById("inputPassword2");
+const email1 = document.getElementById("inputEmail1");
+const email2 = document.getElementById("inputEmail2");
+const jelszo1 = document.getElementById("inputPassword1");
+const jelszo2 = document.getElementById("inputPassword2");
 let gomb;
 
 button.disabled = true;
@@ -22,6 +22,7 @@ function email(inputEmail1){
 function emailell(){
   if (email1.value != email2.value && email1.value != "" && email2.value != "") {
     document.getElementById("emailid").innerHTML = "Email nem egyezik.";
+    console.log(email1.value);
     }else{
       emailid?.remove();
     }
