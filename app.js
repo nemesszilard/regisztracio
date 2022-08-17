@@ -9,7 +9,15 @@ if (email1.value === email2.value && jelszo1.value === jelszo2.value && email1.v
     button.disabled = false;
     }
   }
-function email(){
+function email(inputEmail1){
+  var regx =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(inputEmail1.value.match(regx)){
+    emailvalide?.remove();
+  }else{
+    document.getElementById("emailvalide").innerHTML = "Ez nem email cím.";
+   }
+}
+function emailell(){
   if (email1.value != email2.value && email1.value != "" && email2.value != "") {
     document.getElementById("emailid").innerHTML = "Email nem egyezik.";
     }else{
