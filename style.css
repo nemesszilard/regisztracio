@@ -27,6 +27,9 @@ h1 {
   #emailvalide{
     color: red;
   }
+  #jelszotart{
+    color: red;
+  }
   #kep {
     align-content: center;
   }
