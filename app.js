@@ -1,3 +1,4 @@
+//válozók
 const button = document.getElementById("gomb");
 const email1 = document.getElementById("inputEmail1");
 const email2 = document.getElementById("inputEmail2");
