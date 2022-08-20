@@ -8,7 +8,7 @@ let gomb;
 
 button.disabled = true;
 function katt(){
-if (inputEmail1.value.match(regx) && pass.value.match(/[a-z]+[0-9]+[A-Z]+[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/) && email1.value === email2.value && jelszo1.value === jelszo2.value && email1.value != "" && email2.value != "" && jelszo1.value != "" && jelszo2.value != ""){
+if (inputEmail1.value.match(regx) && pass.value.match(/[a-z]*[0-9]*[A-Z]*[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/) && email1.value === email2.value && jelszo1.value === jelszo2.value && email1.value != "" && email2.value != "" && jelszo1.value != "" && jelszo2.value != ""){
     button.disabled = false;
     }
   }
@@ -30,7 +30,7 @@ function emailell(){
 }
 function jel(){
   var pass = document.getElementById("inputPassword1");
-  if(pass.value.match(/[a-z]+[0-9]+[A-Z]+[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/)) {
+  if(pass.value.match(/[a-z]*[0-9]*[A-Z]*[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/g)) {
     jelszotart?.remove();
   }else{
     document.getElementById("jelszotart").innerHTML = "A jelszónak tartalmaznia kell kisbetűt, számot nagybetűt és különlegeskaraktert.";}
